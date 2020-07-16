@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/main.css">
+
+</head>
+
+<body>
+    <form class="form" action="#">
+        <div class="cartao">
+            <div class="cartaotopo">
+                <img class="imglogin" src="Assets/keyboard.png" alt="">
+                <h1 class="red">Social Network</h1>
+                <p>"Write whatever you want"</p>
+            </div>
+
+            <div>
+                <Label class="label">Email</Label>
+                <input class="input" type="text" placeholder="Digite seu email">
+            </div>
+
+            <div>
+                <Label class="label">Senha</Label>
+                <input class="input" type="text" placeholder="Digite sua senha">
+            </div>
+
+            <div>
+                <button id = "myButtonLogin" class="login"> Login </button>
+
+                <script type="text/javascript">
+                    document.getElementById("myButtonLogin").onclick = function () {
+                         window.location.href = "posts.html";
+                }
+                </script>
+            </div>
+
+            <div>
+
+            <button id="myButtonRegister" class="register" >Cadastro</button>
+
+            <script type="text/javascript">
+                document.getElementById("myButtonRegister").onclick = function () {
+                     window.location.href = "register.html";
+            }
+            </script>
+            </div>
+        </form>
+  </body>
+</html>
+
+                
+                
+            
+
+        
+    
+

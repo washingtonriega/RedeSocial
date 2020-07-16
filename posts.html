@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Styles/posts.css">
+</head>
+<body>
+    <form class="form" action="#">
+        <div class="cartao">
+
+            <div class="cartao">
+                <div class="cartaotopo">
+                    <img class="imglogin" src="Assets/keyboard.png" alt="">
+                    <h1 class="red">Social Network</h1>
+                    <p>"Write whatever you want"</p>
+                </div>
+
+            <input type="text" id="txtVal">
+            <button class="login" onclick="addLi()">Add</button>
+            
+
+                <button class="register" id="myButtonRegister">Voltar</button>
+    
+                <script type="text/javascript">
+                    document.getElementById("myButtonRegister").onclick = function () {
+                         window.location.href = "index.html";
+                }
+                </script>
+                
+            
+            <ul id="list">
+                <li>-As mensagens serão listadas-</li>
+                
+            </ul>
+            
+            <script>
+                
+                function addLi()
+                {
+    
+                    var txtVal = document.getElementById('txtVal').value,
+                        listNode = document.getElementById('list'),
+                        liNode = document.createElement("LI"),
+                        txtNode = document.createTextNode(txtVal);
+                
+                     liNode.appendChild(txtNode);
+                     listNode.appendChild(liNode);
+                
+                }
+                
+            </script>
+        </form>
+</body>
+</html>
